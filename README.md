@@ -1,7 +1,9 @@
 # ITE3006 Assignment
 **Objective:** 
 To design and implement the client-side of a website of your own interest using HTML, CSS, JavaScript. (Do not use any library)
+
 **Assignment Group:**  2 students
+
 **Demo Video:** https://drive.google.com/file/d/1gDejqOlCG_Ss6Y9Ah2mMVLWXndWRyrWF/view?usp=drive_link (Cantonese)
 
 **The work i do: (Allow me to use Chinese to avoid misunderstanding)**
