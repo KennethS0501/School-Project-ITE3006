@@ -10,7 +10,9 @@ To design and implement the client-side of a website of your own interest using 
  1. 網站整體外觀上的設計及Coding
  2. 需要使用到JavaScript的功能
 	2.1. 位於特色內容下方的三張圖片，包含圖片轉換及放大到中間位置的想法及Coding
+    
 	2.2. 推薦職業頁面內的設計及功能想法及Coding
+    
 	2.3. 職業選擇指南的功能想法及Coding
 
 總括來說，我隊友幫助我排除一些不美觀的設計及加Code的comment
