@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>艾爾登法環 - 攻略及消息 - PanKi</title>
+
+  <script type="text/javascript">
+    //save photo on array
+    var imagesRider = [];
+    imagesRider[0] = "../image/indexImage/rider1.jpg";
+    imagesRider[1] = "../image/indexImage/rider2.jpg";
+    imagesRider[2] = "../image/indexImage/rider3.jpg";
+
+    var imagesCreateItem = [];
+    imagesCreateItem[0] = "../image/indexImage/createitem1.jpg";
+    imagesCreateItem[1] = "../image/indexImage/createitem2.jpg";
+    imagesCreateItem[2] = "../image/indexImage/createitem3.jpg";
+
+    var imagesPvp = [];
+    imagesPvp[0] = "../image/indexImage/pvp1.jpg";
+    imagesPvp[1] = "../image/indexImage/pvp2.jpg";
+    imagesPvp[2] = "../image/indexImage/pvp3.jpg";
+    
+    //create a loop, used on line36
+    var loop = 0;
+    
+    //change photo method, that is used on line37
+    function changeImage() {
+      //getElementById is get id="???" on html, src is photo src
+      document.getElementById("imagesRider").src = imagesRider[loop];
+      document.getElementById("imagesCreateItem").src = imagesCreateItem[loop];
+      document.getElementById("imagesPvp").src = imagesPvp[loop];
+      
+      //the loop loop 3 than back to 0, so photo loop is 0 1 2
+      loop++;
+      if (loop == 3) {
+        loop = 0;
+      }
+    }
+    
+    //window.onload is run this function on page open
+    window.onload = function() {
+      setInterval(changeImage, 4000); //loop the function every 4s
+    }
+    
+    //the function used on line121
+    function outWebMessage() {
+      if (confirm("你將會打開外部網站\n請確定")) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  </script>
+
+</head>
+<link rel="stylesheet" href="../CSS/design.css" type="text/css">
+
+<body class="bodyBackgroud">
+  
+  <!--Top menu-->
+  <div class="container">
+    <div class="logo"><img src="../image/icon/icon.png"></div>
+    <div class="menuLeftButton">
+      <a href="../html/news/NEWS.html">最新消息</a>
+    </div>
+
+    <div class="menuLeftButton">
+      <a href="class/classes.html">推薦職業</a>
+    </div>
+    <div class="menuLeftButton">
+      <a href="../html/guide/guide.html">攻略</a>
+    </div>
+
+    <div class="menuRight">
+      <a href="index.html">返回主頁</a>
+    </div>
+  </div>
+  
+  <!--body-->
+  <div class="body" onload="changeImage()">
+    <div>
+      <img src="../image/title1.png" class="topImage">
+    </div>
+    
+    <div class="introduceDiv">
+      <div class="introduce">
+        《艾爾登法環》的故事發生在名為「交界地」的地區，在這片區域所有事情都由艾爾登法環控制。但有一日不知因何緣由艾爾登法環破碎其容器「永恆女王」瑪莉卡亦不知所蹤，已破碎的艾爾登法環化成大量的碎片而「永恆女王」瑪莉卡的後裔各位半神得到了那些較大的碎片名為「大盧恩」由此產生貪念，開始互相爭奪艾爾登法環的碎片引發破碎戰爭。
+        破碎戰爭過後許久，「交界地」滿目狼瘡褪色者醒來開始向著艾爾登法環進發，成為艾爾登之王。
+      </div>
+      <div class="trailer">
+        <iframe style="display: block; margin: auto;" width="100%" height="100%" src="https://www.youtube.com/embed/qqiC88f9ogU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div>
+      <h1>特色內容</h1>
+    </div>
+    <div class="featureDiv">
+      <div class="feature">
+        <img id="imagesRider" src="../image/indexImage/rider1.jpg" class="feaImg1">
+        <h2>坐騎</h2>
+        <a>在交界地,你可以靈馬穿梭交界地的各種區域,更難到達前所未見的地方,欣賞交界地各種美景,更可以騎著馬挑戰各種的Boss,體驗淋漓盡致的戰鬥。</a>
+      </div>
+      <div class="feature">
+        <img id="imagesCreateItem" src="../image/indexImage/createitem1.JPG" class="feaImg2">
+        <h2>製作道具</h2>
+        <a>面對各式各樣的敵人,玩家可以採取不同的方式戰鬥,其中玩家可以透過收集材料製作道具,輕鬆戰勝各種敵人,面對各種情況更能體驗開放世界的樂趣。</a>
+      </div>
+      <div class="feature">
+        <img id="imagesPvp" src="../image/indexImage/pvp1.jpg" class="feaImg3">
+        <h2>多人PVP</h2>
+        <a>經過各種冒險之後,相信各位玩家想要更進一步磨練自己的技術,在交界地裡可以進入或入侵其他玩家的世界,與各樣的玩家切磋武藝,體驗不同的套路</a>
+      </div>
+    </div>
+    <div>
+      <h1>購買平台</h1>
+    </div>
+    <div class="buyDiv">
+      <div class="buy">
+        <a>PC</a><br>
+        <a>HKD$ 339</a><br>
+        <a href="https://store.steampowered.com/app/1245620/_/" class="buyButton" onclick="return outWebMessage()">進入商店</a>
+      </div>
+      <div class="buy">
+        <a>Xbox</a><br>
+        <a>HKD$ 479</a><br>
+        <a href="https://www.xbox.com/zh-HK/games/elden-ring" class="buyButton" onclick="return outWebMessage()">進入商店</a>
+      </div>
+      <div class="buy">
+        <a>PlayStation</a><br>
+        <a>HKD$ 479</a><br>
+        <a href="https://store.playstation.com/zh-hant-hk/concept/10000333" class="buyButton" onclick="return outWebMessage()">進入商店</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerBackgroud">
+    <div class="footerItem1">
+      <div>
+        <h1>意見回饋</h1>
+      </div>
+      <div class="form1">
+        <form>
+          <label for="name">暱稱:</label>
+          <input type="text" required><br>
+          <label for="name">郵件:</label>
+          <input type="email" required><br>
+          <label for="name">意見:</label><br>
+          <textarea rows="3" cols="34" required></textarea><br>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+    <div class="footerItem2">
+      <div id="img-container"><img id="img" src="../image/icon/icon.png"></div>
+      <div class="table-row">
+        <div class="table-core"><a href="https://www.facebook.com/ELDENRINGOFFICIAL/"><img src="../image/icon/Facebook.svg"></a></div>
+        <div class="table-core"><a href="https://twitter.com/eldenring"><img src="../image/icon/Twitter.svg"></a></div>
+        <div class="table-core"><a href="https://www.instagram.com/eldenring/"><img src="../image/icon/ig.png"></a></div>
+      </div>
+      <div class="table-row">
+        <div class="table-core"><a href="https://store.steampowered.com/agecheck/app/1245620/"><img src="../image/icon/steam.png"></a></div>
+        <div class="table-core"><a href="https://store.playstation.com/zh-hant-hk/concept/10000333"><img src="../image/icon/ps.png"></a></div>
+        <div class="table-core"><a href="https://www.xbox.com/zh-HK/games/elden-ring"><img src="../image/icon/xbox.png"></a></div>
+      </div>
+      <div class="table-row">
+        <div class="table-core"><a href="https://www.youtube.com/channel/UCETrNUjuH4EoRdZNFx9EI-A"><img class="link-img" src="../image/icon/youtube.svg"></a></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

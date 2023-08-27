@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>艾爾登法環 - 職業 - PanKi</title>
+</head>
+<link rel="stylesheet" href="../../CSS/design.css" type="text/css">
+<script>
+  var x = 0;
+  
+  //used on line70 and line135
+  //when run, the photo will change. innerHTML is change all of html, include <___>
+  function nextClasses() {
+    document.getElementById("class11").innerHTML = document.getElementById("class10").innerHTML;
+    document.getElementById("class10").innerHTML = document.getElementById("class9").innerHTML;
+    document.getElementById("class9").innerHTML = document.getElementById("class8").innerHTML;
+    document.getElementById("class8").innerHTML = document.getElementById("class7").innerHTML;
+    document.getElementById("class7").innerHTML = document.getElementById("class6").innerHTML;
+    document.getElementById("class6").innerHTML = document.getElementById("class5").innerHTML;
+    document.getElementById("class5").innerHTML = document.getElementById("class4").innerHTML;
+    document.getElementById("class4").innerHTML = document.getElementById("class3").innerHTML;
+    document.getElementById("class3").innerHTML = document.getElementById("class2").innerHTML;
+    document.getElementById("class2").innerHTML = document.getElementById("class1").innerHTML;
+    document.getElementById("class1").innerHTML = document.getElementById("class11").innerHTML;
+  }
+
+  function previousClasses() {
+    document.getElementById("class11").innerHTML = document.getElementById("class1").innerHTML;
+    document.getElementById("class1").innerHTML = document.getElementById("class2").innerHTML;
+    document.getElementById("class2").innerHTML = document.getElementById("class3").innerHTML;
+    document.getElementById("class3").innerHTML = document.getElementById("class4").innerHTML;
+    document.getElementById("class4").innerHTML = document.getElementById("class5").innerHTML;
+    document.getElementById("class5").innerHTML = document.getElementById("class6").innerHTML;
+    document.getElementById("class6").innerHTML = document.getElementById("class7").innerHTML;
+    document.getElementById("class7").innerHTML = document.getElementById("class8").innerHTML;
+    document.getElementById("class8").innerHTML = document.getElementById("class9").innerHTML;
+    document.getElementById("class9").innerHTML = document.getElementById("class10").innerHTML;
+    document.getElementById("class10").innerHTML = document.getElementById("class11").innerHTML;
+  }
+
+</script>
+
+<body class="bodyBackgroud">
+  <div class="container">
+    <div class="logo"><img src="../../image/icon/icon.png"></div>
+    <div class="menuLeftButton">
+      <a href="../news/NEWS.html">最新消息</a>
+    </div>
+
+    <div class="menuLeftButton">
+      <a href="classes.html">推薦職業</a>
+    </div>
+    <div class="menuLeftButton">
+      <a href="../../html/guide/guide.html">攻略</a>
+    </div>
+    <div class="menuRight">
+      <a href="../index.html">返回主頁</a>
+    </div>
+  </div>
+  <!--body-->
+
+  <body class="bodyBackgroud">
+    <div class="body" style="margin-top: 80px;">
+      <!--code here-->
+      <div>
+        <h1 style="margin: 0px;">職業列表</h1>
+      </div>
+      <div class="leftRightButton">
+        <img src="../../image/leftRightButton.png" onclick="previousClasses()" class="leftButton">
+        <img src="../../image/leftRightButton.png" onclick="nextClasses()" class="rightButton">
+      </div>
+      <div class="classesDiv" id="classesDiv">
+        <div class="classes c1" id="class1" onclick="previousClasses()">
+          <h2>密使</h2>
+          <img src="../../image/classes/confessor.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 10</td>
+            </tr>
+            <tr>
+              <td>生命力: 10</td>
+              <td>集中力: 13</td>
+            </tr>
+            <tr>
+              <td>耐力: 10</td>
+              <td>力氣: 12</td>
+            </tr>
+            <tr>
+              <td>靈巧: 12</td>
+              <td>智力: 9</td>
+            </tr>
+            <tr>
+              <td>信仰: 14</td>
+              <td>感應: 9</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★★☆☆☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c2" id="class2">
+          <h2>流浪騎士</h2>
+          <img src="../../image/classes/vagabond.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 9</td>
+            </tr>
+            <tr>
+              <td>生命力: 15</td>
+              <td>集中力: 10</td>
+            </tr>
+            <tr>
+              <td>耐力: 11</td>
+              <td>力氣: 14</td>
+            </tr>
+            <tr>
+              <td>靈巧: 13</td>
+              <td>智力: 9</td>
+            </tr>
+            <tr>
+              <td>信仰: 9</td>
+              <td>感應: 7</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★★★★☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c3" id="class3" onclick="nextClasses()">
+          <h2>武士</h2>
+          <img src="../../image/classes/samurai.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 9</td>
+            </tr>
+            <tr>
+              <td>生命力: 12</td>
+              <td>集中力: 11</td>
+            </tr>
+            <tr>
+              <td>耐力: 13</td>
+              <td>力氣: 12</td>
+            </tr>
+            <tr>
+              <td>靈巧: 15</td>
+              <td>智力: 9</td>
+            </tr>
+            <tr>
+              <td>信仰: 8</td>
+              <td>感應: 8</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★★★☆☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c4 hide" id="class4">
+          <h2>囚犯</h2>
+          <img src="../../image/classes/PRISONER.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 9</td>
+            </tr>
+            <tr>
+              <td>生命力: 11</td>
+              <td>集中力: 12</td>
+            </tr>
+            <tr>
+              <td>耐力: 11</td>
+              <td>力氣: 11</td>
+            </tr>
+            <tr>
+              <td>靈巧: 14</td>
+              <td>智力: 14</td>
+            </tr>
+            <tr>
+              <td>信仰: 6</td>
+              <td>感應: 9</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★☆☆☆☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c5 hide" id="class5">
+          <h2>勇者</h2>
+          <img src="../../image/classes/hero.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 7</td>
+            </tr>
+            <tr>
+              <td>生命力: 14</td>
+              <td>集中力: 9</td>
+            </tr>
+            <tr>
+              <td>耐力: 12</td>
+              <td>力氣: 16</td>
+            </tr>
+            <tr>
+              <td>靈巧: 9</td>
+              <td>智力: 7</td>
+            </tr>
+            <tr>
+              <td>信仰: 8</td>
+              <td>感應: 11</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★★☆☆☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c6 hide" id="class6">
+          <h2>劍士</h2>
+          <img src="../../image/classes/warrior.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 8</td>
+            </tr>
+            <tr>
+              <td>生命力: 11</td>
+              <td>集中力: 12</td>
+            </tr>
+            <tr>
+              <td>耐力: 11</td>
+              <td>力氣: 10</td>
+            </tr>
+            <tr>
+              <td>靈巧: 16</td>
+              <td>智力: 10</td>
+            </tr>
+            <tr>
+              <td>信仰: 8</td>
+              <td>感應: 9</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★★★★☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c7 hide" id="class7">
+          <h2>盜賊</h2>
+          <img src="../../image/classes/bandit.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 5</td>
+            </tr>
+            <tr>
+              <td>生命力: 10</td>
+              <td>集中力: 11</td>
+            </tr>
+            <tr>
+              <td>耐力: 10</td>
+              <td>力氣: 9</td>
+            </tr>
+            <tr>
+              <td>靈巧: 13</td>
+              <td>智力: 9</td>
+            </tr>
+            <tr>
+              <td>信仰: 8</td>
+              <td>感應: 14</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★☆☆☆☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c8 hide" id="class8">
+          <h2>預言家</h2>
+          <img src="../../image/classes/prophet.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 7</td>
+            </tr>
+            <tr>
+              <td>生命力: 10</td>
+              <td>集中力: 14</td>
+            </tr>
+            <tr>
+              <td>耐力: 8</td>
+              <td>力氣: 11</td>
+            </tr>
+            <tr>
+              <td>靈巧: 10</td>
+              <td>智力: 7</td>
+            </tr>
+            <tr>
+              <td>信仰: 16</td>
+              <td>感應: 10</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★☆☆☆☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c9 hide" id="class9">
+          <h2>一貧如洗</h2>
+          <img src="../../image/classes/wretch.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 9</td>
+            </tr>
+            <tr>
+              <td>生命力: 10</td>
+              <td>集中力: 10</td>
+            </tr>
+            <tr>
+              <td>耐力: 10</td>
+              <td>力氣: 10</td>
+            </tr>
+            <tr>
+              <td>靈巧: 10</td>
+              <td>智力: 10</td>
+            </tr>
+            <tr>
+              <td>信仰: 10</td>
+              <td>感應: 10</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ☆☆☆☆☆</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes c10 hide" id="class10">
+          <h2>觀星者</h2>
+          <img src="../../image/classes/astrologer.JPG">
+          <table class="ClassesTable">
+            <tr>
+              <th colspan=2>初始數據</th>
+            </tr>
+            <tr>
+              <td colspan=2 style="text-align: center">等級: 6</td>
+            </tr>
+            <tr>
+              <td>生命力: 9</td>
+              <td>集中力: 15</td>
+            </tr>
+            <tr>
+              <td>耐力: 9</td>
+              <td>力氣: 8</td>
+            </tr>
+            <tr>
+              <td>靈巧: 12</td>
+              <td>智力: 16</td>
+            </tr>
+            <tr>
+              <td>信仰: 7</td>
+              <td>感應: 9</td>
+            </tr>
+            <tr>
+              <td colspan=2>新手推薦: ★★★★★</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classes hide" id="class11">
+        </div>
+      </div>
+      <div class="classesFunctionButton">
+        <a href="classForm.html" class="button">職業選擇指南</a>
+      </div>
+    </div>
+  </body>
+
+  <!--footer-->
+  <div class="footerBackgroud">
+    <div class="footerItem1">
+      <div>
+        <h1>意見回饋</h1>
+      </div>
+      <div class="form1">
+        <form method="post">
+          <label for="name">暱稱:</label>
+          <input type="text" required><br>
+          <label for="name">郵件:</label>
+          <input type="email" required><br>
+          <label for="name">意見:</label><br>
+          <textarea rows="3" cols="34" required></textarea><br>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+    <div class="footerItem2">
+      <div id="img-container"><img id="img" src="../../image/icon/icon.png"></div>
+      <div class="table-row">
+        <div class="table-core"><a href="https://www.facebook.com/ELDENRINGOFFICIAL/"><img src="../../image/icon/Facebook.svg"></a></div>
+        <div class="table-core"><a href="https://twitter.com/eldenring"><img src="../../image/icon/Twitter.svg"></a></div>
+        <div class="table-core"><a href="https://www.instagram.com/eldenring/"><img src="../../image/icon/ig.png"></a></div>
+      </div>
+      <div class="table-row">
+        <div class="table-core"><a href="https://store.steampowered.com/agecheck/app/1245620/"><img src="../../image/icon/steam.png"></a></div>
+        <div class="table-core"><a href="https://store.playstation.com/zh-hant-hk/concept/10000333"><img src="../../image/icon/ps.png"></a></div>
+        <div class="table-core"><a href="https://www.xbox.com/zh-HK/games/elden-ring"><img src="../../image/icon/xbox.png"></a></div>
+      </div>
+      <div class="table-row">
+        <div class="table-core"><a href="https://www.youtube.com/channel/UCETrNUjuH4EoRdZNFx9EI-A"><img class="link-img" src="../../image/icon/youtube.svg"></a></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
